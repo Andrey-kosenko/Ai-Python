@@ -2,10 +2,10 @@ from g4f.client import Client
 import uuid
 
 
-vibor = input("Выбери 0 = математика, 1 = укр мова, 2 = Інформатика: ")
-varianti = input("Сколько нужно вариантов: ")
-skolko = input("Сколько будет вопросов: ")
-vopros = input("Напиши вопрос: ")
+#vibor = input("Выбери 0 = математика, 1 = укр мова, 2 = Інформатика: ")
+#varianti = input("Сколько нужно вариантов: ")
+#skolko = input("Сколько будет вопросов: ")
+#vopros = input("Напиши вопрос: ")
 
 uchitel = ""
 if vibor == '0':
@@ -20,15 +20,10 @@ else:
 
 client = Client()
 response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
+    model="gpt-4",
     messages=[{
         "role": "user",
-        "content": f"Представь что ты учетель по {uchitel}"
-        f"И тебе надо зделать вопросы по теме {vopros} "
-        f"Нужно будет зделать столько вариантов{varianti}"
-        f"И нужно будет стлоько вопросов в одном варианте {skolko}"
-        f"И еще каждий вариант не убольщает и не уменшает сложность"
-        f"А только делает разные вопросы для избешания списования"
+        "content": ""
     }],
 )
 
