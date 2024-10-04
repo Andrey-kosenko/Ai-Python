@@ -1,8 +1,6 @@
 from g4f.client import Client
-import os
 import uuid
 
-file_name = f"{uuid.uuid4()}.txt"
 
 vibor = input("Выбери 0 = математика, 1 = укр мова, 2 = Інформатика: ")
 varianti = input("Сколько нужно вариантов: ")
