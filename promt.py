@@ -10,7 +10,6 @@ skolko = input("Сколько будет вопросов: ")
 vopros = input("Напиши вопрос: ")
 
 uchitel = ""
-bom bom
 if vibor == '0':
     uchitel = "математики"
 elif vibor == '1':
